@@ -5,24 +5,23 @@ import { Container } from "@mui/material";
 import React from "react";
 import { getProductById } from "@/services/get-product-by-id";
 
-interface PageProps {
-  params: {
-    id: number;
-  };
-}
-
 /**
  * ProductPage component that fetches and displays product details.
  * It uses React Query for to prefetch.
  * It also sets up a hydration boundary for server-side rendering.
  */
-export default async function ProductPage({ params }: PageProps) {
-  const { id } = await params;
+export default async function ProductPage({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}) {
+  const resolvedParams = await params; // Await the params Promise
+  const id = resolvedParams.id;
 
   return (
     <HydrationBoundary>
       <Container maxWidth="xl">
-        <ProductDetails id={id} />
+        <ProductDetails id={parseInt(id)} />
       </Container>
     </HydrationBoundary>
   );
@@ -31,9 +30,13 @@ export default async function ProductPage({ params }: PageProps) {
 /**
  * Using the `generateMetadata` function to set metadata for a specific page.
  */
-export async function generateMetadata({ params }: PageProps) {
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}) {
   const { id } = await params;
-  const product = await getProductById({ id });
+  const product = await getProductById({ id: parseInt(id) });
 
   return {
     title: `${product.title}`,
