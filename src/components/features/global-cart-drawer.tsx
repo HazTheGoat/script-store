@@ -12,7 +12,12 @@ export const GlobalCartDrawer = () => {
   const quantity = useGetCartItemsQuantity();
 
   return (
-    <Drawer anchor="right" open={isCartOpen} onClose={closeCart}>
+    <Drawer
+      aria-labelledby="cart-drawer-title"
+      anchor="right"
+      open={isCartOpen}
+      onClose={closeCart}
+    >
       <Box
         sx={{
           width: {
@@ -39,16 +44,15 @@ export const GlobalCartDrawer = () => {
                 height: 40,
                 minWidth: 0,
                 mr: 1,
-                display: { xs: "flex", md: "none" },
               }}
             >
               <CloseIcon />
             </Button>
-            <Typography variant="h6" gutterBottom>
+            <Typography variant="h6" gutterBottom id="cart-drawer-title">
               Din handlekurv
             </Typography>
           </Box>
-          <Typography>
+          <Typography aria-live="polite">
             {quantity === 1
               ? `(${quantity} vare)`
               : quantity > 1
