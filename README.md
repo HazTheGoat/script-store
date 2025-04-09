@@ -43,12 +43,33 @@ The project follows a feature-based folder structure:
 ### 7. **Testing**
 - The project is set up for testing but does not currently include test cases. You can integrate tools like Jest and React Testing Library for unit and integration testing.
 
-## AI Usage
+## 8. **AI Usage**
+- ChatGPT was used to:
+  - Generate README.md file
+  - Create optimization checklists for performance and accessibility
 
-This project does not currently use AI technologies. However, it can be extended to include AI-powered features such as:
-- **Product Recommendations**: Using machine learning models to suggest products based on user behavior.
-- **Chatbots**: Integrating AI chatbots for customer support.
-- **Image Recognition**: Enabling users to search for products using images.
+## 9. **IF I HAD MORE TIME**
+- UI and UX improvements
+    - Extract "above the fold" css and ctirical components to a separate bundle
+    - Infinite scroll (lazy loading) 
+    - Skeleton loading states
+    - Lazy loaded non-critical components
+- Accessibility
+    - Full keyboard navigation support
+    - ARIA labels on interactive elements
+    - Optimized color contrast
+    - Screen reader-friendly structure
+- Performance Optimizations
+    - Lazy loading images with `next/image`
+    - Dynamic imports for large components
+    - Data prefetching when hovering links
+
+- SEO Enhancements
+    - Proper meta tags (title, description)
+    - Optimized loading and bundle splitting
+- Error handling
+    - Error boundaries wrap critical parts of the app.
+    - API error responses are handled gracefully with UI feedback.
 
 ## Getting Started
 To run the project locally, follow these steps:
