@@ -1,4 +1,4 @@
-import { formatCurrency } from "@/utils/format-currency";
+import { formatCurrency } from "@/utils";
 import { Typography, TypographyVariant } from "@mui/material";
 import React from "react";
 

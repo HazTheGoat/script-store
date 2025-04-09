@@ -1,5 +1,5 @@
-import { CartItem } from "@/store/slices/cart-slice";
-import { useGlobalStore } from "@/store/use-store";
+import { CartItem } from "@/store/slices";
+import { useGlobalStore } from "@/store";
 import { Select, MenuItem } from "@mui/material";
 import React from "react";
 

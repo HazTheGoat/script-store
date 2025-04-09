@@ -3,7 +3,7 @@
 import { ThemeProvider } from "@mui/material/styles";
 import { createAppTheme } from "@/theme/theme";
 import { CssBaseline } from "@mui/material";
-import { useGlobalStore } from "@/store/use-store";
+import { useGlobalStore } from "@/store";
 
 type Props = {
   children: React.ReactNode;

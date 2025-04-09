@@ -2,7 +2,7 @@ import { IconButton } from "@mui/material";
 import React from "react";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
 import LightModeIcon from "@mui/icons-material/LightMode";
-import { useGlobalStore } from "@/store/use-store";
+import { useGlobalStore } from "@/store";
 
 export const ThemeSwitcher = () => {
   const mode = useGlobalStore((state) => state.mode);

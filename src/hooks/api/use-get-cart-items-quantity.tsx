@@ -1,4 +1,4 @@
-import { useGlobalStore } from "@/store/use-store";
+import { useGlobalStore } from "@/store";
 import { useMemo } from "react";
 
 export const useGetCartItemsQuantity = () => {

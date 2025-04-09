@@ -1,4 +1,4 @@
-import { formatCurrency } from "@/utils/format-currency";
+import { formatCurrency } from "@/utils";
 import {
   List,
   ListItem,
@@ -11,9 +11,9 @@ import {
   Divider,
 } from "@mui/material";
 import React from "react";
-import { QuantitySelector } from "../ui/quantity-selector";
-import { useGlobalStore } from "@/store/use-store";
 import CloseIcon from "@mui/icons-material/Close";
+import { QuantitySelector } from "../ui";
+import { useGlobalStore } from "@/store";
 
 export const CartProductList = () => {
   const { items, removeItem } = useGlobalStore();

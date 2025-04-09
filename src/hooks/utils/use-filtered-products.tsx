@@ -1,5 +1,5 @@
-import { useGlobalStore } from "@/store/use-store";
-import { Product } from "@/types/product";
+import { useGlobalStore } from "@/store";
+import { Product } from "@/types";
 import { useMemo } from "react";
 
 export const useFilteredProducts = (products: Product[] | undefined) => {

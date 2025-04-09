@@ -1,5 +1,5 @@
 import { StateCreator } from "zustand";
-import { Category } from "@/types/category"; // Assuming you have the Category enum already
+import { Category } from "@/types";
 
 export interface FilterSlice {
   selectedCategory: Category | "all";

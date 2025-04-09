@@ -1,7 +1,7 @@
 import { Box, Stack, Typography } from "@mui/material";
 import React, { useMemo } from "react";
 import { Price } from "./price";
-import { useGlobalStore } from "@/store/use-store";
+import { useGlobalStore } from "@/store";
 
 export const CartSummary = () => {
   const { items } = useGlobalStore();

@@ -1,5 +1,5 @@
-import { SortOption } from "@/store/slices/sort-slice";
-import { useGlobalStore } from "@/store/use-store";
+import { SortOption } from "@/store/slices";
+import { useGlobalStore } from "@/store";
 import { Select, MenuItem, Box, Typography } from "@mui/material";
 
 export const SortSelect = () => {

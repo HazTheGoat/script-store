@@ -1,5 +1,5 @@
-import { getProducts } from "@/services/get-products";
-import { Product } from "@/types/product";
+import { getProducts } from "@/services";
+import { Product } from "@/types";
 import { type UseQueryResult, useQuery } from "@tanstack/react-query";
 
 export const USE_GET_PRODUCTS = "USE_GET_PRODUCTS";

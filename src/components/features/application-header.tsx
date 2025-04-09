@@ -5,8 +5,7 @@ import Toolbar from "@mui/material/Toolbar";
 import Container from "@mui/material/Container";
 import Link from "next/link";
 import { Box, styled } from "@mui/material";
-import { Cart } from "../ui/cart";
-import { ThemeSwitcher } from "../ui/theme-switcher";
+import { ThemeSwitcher, Cart } from "../ui";
 
 const Offset = styled("div")(({ theme }) => theme.mixins.toolbar);
 

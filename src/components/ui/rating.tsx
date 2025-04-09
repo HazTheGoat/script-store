@@ -1,4 +1,4 @@
-import { Rating as RatingType } from "@/types/product";
+import { Rating as RatingType } from "@/types";
 import { Stack, Typography } from "@mui/material";
 import React from "react";
 import StarIcon from "@mui/icons-material/Star";

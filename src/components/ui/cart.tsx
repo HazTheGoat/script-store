@@ -1,8 +1,8 @@
 import React from "react";
 import LocalMallIcon from "@mui/icons-material/LocalMall";
 import { IconButton } from "@mui/material";
-import { useGlobalStore } from "@/store/use-store";
-import { useGetCartItemsQuantity } from "@/hooks/api/use-get-cart-items-quantity";
+import { useGlobalStore } from "@/store";
+import { useGetCartItemsQuantity } from "@/hooks/api";
 
 export const Cart = () => {
   const openCart = useGlobalStore((state) => state.openCart);

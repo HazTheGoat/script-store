@@ -1,5 +1,5 @@
-import { useGlobalStore } from "@/store/use-store";
-import { Category } from "@/types/category";
+import { useGlobalStore } from "@/store/";
+import { Category } from "@/types";
 import { MenuItem, Select, Stack, Typography } from "@mui/material";
 
 export const CategoryFilter = () => {

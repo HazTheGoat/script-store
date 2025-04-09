@@ -1,5 +1,5 @@
-import { BASE_URL } from "@/constants/urls";
-import { Product } from "@/types/product";
+import { BASE_URL } from "@/constants";
+import { Product } from "@/types";
 import axios from "axios";
 
 type Props = {

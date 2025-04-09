@@ -1,6 +1,6 @@
-import { Product } from "@/types/product";
+import { Product } from "@/types";
 import { UseQueryResult, useQuery } from "@tanstack/react-query";
-import { getProductById } from "@/services/get-product-by-id";
+import { getProductById } from "@/services";
 
 export const USE_GET_PRODUCT = "USE_GET_PRODUCT";
 

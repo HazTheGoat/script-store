@@ -1,5 +1,5 @@
-import { useGlobalStore } from "@/store/use-store";
-import { Product } from "@/types/product";
+import { useGlobalStore } from "@/store";
+import { Product } from "@/types";
 import { Button } from "@mui/material";
 
 type Props = {

@@ -1,10 +1,10 @@
 "use client";
 
-import { useGlobalStore } from "@/store/use-store";
+import { useGlobalStore } from "@/store";
 import { Box, Button, Drawer, Stack, Typography } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
-import { useGetCartItemsQuantity } from "@/hooks/api/use-get-cart-items-quantity";
-import { CartSummary } from "../ui/cart-summary";
+import { useGetCartItemsQuantity } from "@/hooks/api";
+import { CartSummary } from "../ui";
 import { CartProductList } from "./cart-product-list";
 
 export const GlobalCartDrawer = () => {

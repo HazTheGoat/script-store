@@ -1,12 +1,9 @@
 "use client";
 
-import { useGetProductById } from "@/hooks/api/use-get-product-by-id";
+import { useGetProductById } from "@/hooks/api";
 import { Box, Grid, Stack, Typography } from "@mui/material";
 import React from "react";
-import { ProductImage } from "../ui/product-image";
-import { Price } from "../ui/price";
-import { Rating } from "../ui/rating";
-import { AddToCart } from "../ui/add-to-cart";
+import { Price, AddToCart, Rating, ProductImage } from "../ui/";
 
 type Props = {
   id: number;

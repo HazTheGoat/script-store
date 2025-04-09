@@ -1,10 +1,8 @@
 import { Product } from "@/types/product";
 import { Card, CardContent, Typography, Stack } from "@mui/material";
 import React from "react";
-import { Rating } from "../ui/rating";
-import { Price } from "../ui/price";
-import { ProductImage } from "../ui/product-image";
 import { useRouter } from "next/navigation";
+import { ProductImage, Price, Rating } from "../ui";
 
 type Props = {
   item: Product;

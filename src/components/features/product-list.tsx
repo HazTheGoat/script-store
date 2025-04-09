@@ -1,11 +1,10 @@
 "use client";
 
-import { useGetProducts } from "@/hooks/api/use-get-products";
+import { useGetProducts } from "@/hooks/api";
 import { Grid, Stack } from "@mui/material";
 import { ProductCard } from "./product-card";
-import { CategoryFilter } from "../ui/category-filter";
-import { SortSelect } from "../ui/sort-select";
-import { useFilteredProducts } from "@/hooks/utils/use-filtered-products";
+import { CategoryFilter, SortSelect } from "../ui";
+import { useFilteredProducts } from "@/hooks/utils";
 
 export function ProductListFeatureShell() {
   const { data: products, isLoading, error } = useGetProducts();
